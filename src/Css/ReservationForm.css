@@ -1,0 +1,39 @@
+
+.reservation-form-container{
+    background-image: linear-gradient(grey, white);
+    border: 12px;
+    box-shadow: 0 4px 24px rgba(49, 25, 85, 0.9);
+    height: 600px;
+    width: 620px;
+    border-radius: 250px;
+    margin-top: 8pc;
+    margin-bottom: 4pc;
+    display: flex;
+    margin-left:27pc;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reservation-form input,.reservation-form label{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.reservation-form label{
+    text-align: left;
+    margin-right: 12px;
+}
+.form-group{
+    margin-bottom: 12px;
+
+}
+.reserve-button{
+    margin-top: 12px;
+}
+
+.show-reservations-button{
+    width: 200px;
+    height: 40px;
+    margin-left: 13pc;
+    border-radius: 12px;
+    border: none;
+}

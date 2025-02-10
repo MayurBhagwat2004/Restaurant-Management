@@ -1,0 +1,264 @@
+.topnav{
+    background-color: #eeeff1;
+    overflow: hidden;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+.topnav a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+    text-shadow: 22px 10px 13px rgba(0, 0, 0, 0.7);
+}
+
+.topnav a:hover{
+    font-size: 24px;
+    text-shadow: 0px 0px rgba(0, 0, 0, 0.9);
+
+}
+
+.reservation-gallery{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-top: 19pc;
+    margin-bottom: 22pc;
+    align-items: center;
+    border-radius: 23px;
+}
+
+.reservation-block{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    background-image: url("/Images/home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.reservation-button{
+    padding: 15px 30px;
+}
+.reserve-button{
+    background-color: #3c3a03;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+  
+  .reserve-button:hover {
+    background-color: #43462a;
+    transform: translateY(-2px);
+  }
+
+  .menu-block{
+    height: 900px;
+    /* background: #e6e5e9; */
+    background: url("/Images/menu1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-table{
+    width: 570px;
+    margin-top: 4pc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+.menu-table th{
+    font-family: 'Courier, monospace';
+}
+
+.menu-table tr,
+.menu-table td{
+    padding: 18px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.menu-table td:hover{
+    font-size: 23px;
+    background-color: #3c3a03;
+    color: white;
+}
+.menu-block table tr{
+    font-size: 25px;
+} 
+
+.menu-items{
+    
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: 100;
+}
+.menu-items-card{
+    width: 500px;
+    background:red;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.staff-member-card{
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(135deg,#f6d365 0%, #fda085 100%); */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    max-width: 350px;
+    height: 400px;
+    width: 350px;
+    transition: transform 0.3s;
+    color: #333;
+
+}
+
+.staff-member-card:hover{
+    transform: translateY(-5px);
+}
+
+.staff-member-card h2{
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+.staff-member-card p{
+    font-size: 1rem;
+    color: #666;
+}
+
+.staff-member-card .description{
+    display: block;
+    margin-top: 8px;
+    font-size: 1.2rem;
+    color: #ff5722;
+}
+
+.staff-member-card-container{
+    display: flex;
+    margin-top: 12pc;
+    justify-content: space-around;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px;
+    height: 450px;
+}
+
+.staff-title{
+    font-size: 2rem;
+}
+
+.chef-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.staff-info-container{
+    width: 60%;
+    height: 500px;
+    margin-top: 2pc;
+    margin-bottom: 4pc;
+    background-color: rgb(36, 33, 33);
+    display: flex;
+    align-items: center;
+    margin-left: 23pc;
+    border-radius: 23px;
+    align-content: center;
+    transition: background-color 0.5 ease;
+}
+
+.staff-info-container.active {
+    background-color: white;
+    color: black; /* Change text color when background is white */
+    transition: background-color 0.5s ease;
+  }
+
+.description{
+    font-size: 20px;
+    color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-left h4{
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.footer-left p{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+.footer-middle-elements-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-middle ul,.footer-right ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-middle ul li,.footer-right ul li{
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.footer-middle ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    padding-left: 12px;
+
+}
+  
+  .footer-middle ul li a:hover, .footer-right ul li a:hover {
+    color: #f2b600; /* Golden color on hover */
+  }

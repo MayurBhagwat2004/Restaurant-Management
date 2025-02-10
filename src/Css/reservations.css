@@ -1,0 +1,26 @@
+
+.reservations-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    width:800px;
+    border-radius: 23px;
+    margin-left: 22pc;
+    margin-top: -10pc;
+}
+
+.reservations-page-container table{
+    margin-top: 0;
+}
+
+.reservations-page-container table tr th, .reservations-page-container table tr td{
+    padding: 12px;
+}
+
+.back-button{
+    margin-top: 23px;
+    margin-left: 13pc;
+    padding: 6px;
+    width: 50%;
+}
