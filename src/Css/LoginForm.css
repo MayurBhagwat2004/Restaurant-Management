@@ -48,5 +48,10 @@ You can add this to your CSS file
   
 
 .demo-div{
-  background: url("");
+  background:url("/Images/chef1.jpg");
+  height: 600px;
+  margin-left: 34pc;
+  margin-top: 12pc;
+  margin-bottom: 12pc;
+  width: 400px;
 }

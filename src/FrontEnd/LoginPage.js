@@ -2,12 +2,12 @@ import React,{useState} from 'react'
 import '../Css/LoginForm.css'
 export const LoginForm = () => {
 
-    const [email,setEmail] = useState("")
-    const [pass,setPass] = useState("")
+    // const [email,setEmail] = useState("")
+    // const [pass,setPass] = useState("")
 
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-    }
+    // const handleSubmit = (e) =>{
+    //     e.preventDefault()
+    // }
 
     return(
             // <div className='login-form-container'>
