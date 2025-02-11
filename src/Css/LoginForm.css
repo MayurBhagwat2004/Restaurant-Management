@@ -85,3 +85,14 @@ You can add this to your CSS file
   align-self: center;
   margin-right: 34pc;
 }
+
+
+.register-div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
+}
+
+.register-div span{
+  margin-bottom: 12px;
+}

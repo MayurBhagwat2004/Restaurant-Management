@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import '../Css/LoginForm.css'
-import { NavBar,Footer,ReservationBlock,StaffSection } from './home'
-import { useNavigate,Route,Router,Routes } from 'react-router-dom'
+import { NavBar,Footer} from './home'
+import { useNavigate} from 'react-router-dom'
 export const LoginForm = () => {
 
     const [email,setEmail] = useState("")
@@ -55,10 +55,9 @@ export const LoginForm = () => {
                     </div>
                     <div className='form-elements'>
                         <div className='register-div'>
-
+                            <span>Do not have an account?</span>
+                            <button onClick={redirectUserToRegister}>Register</button>
                         </div>
-                        <span>Do not have an account?</span>
-                        <button onClick={redirectUserToRegister}>Register</button>
                     </div>
                 </form>
                 </div>
