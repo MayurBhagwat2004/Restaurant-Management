@@ -205,8 +205,7 @@
     background-color: #333;
     color: white;
     padding: 20px 0;
-    position: relative;
-    bottom: 0;
+    position: absolute;
     width: 100%;
 
 }
@@ -215,6 +214,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
     padding: 0 20px;
 }
 
@@ -238,6 +238,9 @@
 .footer-middle-elements-div{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-middle ul,.footer-right ul{
@@ -248,6 +251,7 @@
 .footer-middle ul li,.footer-right ul li{
     margin: 5px 0;
     font-size: 20px;
+    text-align: center;
 }
 
 .footer-middle ul li a, .footer-right ul li a {
@@ -256,9 +260,22 @@
     font-size: 24px;
     transition: color 0.3s ease;
     padding-left: 12px;
-
 }
   
   .footer-middle ul li a:hover, .footer-right ul li a:hover {
     color: #f2b600; /* Golden color on hover */
   }
+
+.login-button{
+    height: 50px;
+    width: 90px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.4s;
+    padding: 7px ;
+    cursor: pointer;
+    margin-left: 60pc;
+    margin-top: 10px;
+}

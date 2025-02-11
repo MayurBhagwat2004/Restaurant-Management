@@ -1,16 +1,38 @@
-import React, { useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import '../Css/home.css';
 import { useNavigate,Link } from 'react-router-dom';
 
 
+
 export const NavBar = () => {
+  const [isLoggedIn,setIsLoggedIn] = useState(false)
+  const [loginButtonStatus,setLoginButtonStatus] = useState("Login")
+
+  const changeLoginStatus = () => {
+    localStorage.setItem("isLoggedIn",false)
+    
+  }
+
+  useEffect(()=>{
+    const loginStatus = localStorage.getItem("isLoggedIn") === 'true'
+    setIsLoggedIn(loginStatus)
+    if(loginStatus){
+      setLoginButtonStatus("Logout")
+    }
+    else{
+      setLoginButtonStatus("Login")
+    }
+    
+  })
+
+
   return (
     <div className="topnav">
       <Link to="/"><p>Home</p></Link>
       <Link to='/menu'><p>Menu</p></Link>
       <Link to='/about'><p>About</p></Link>
       <Link to='/reservations'><p>Reservations</p></Link>
-      <Link to="/login"><p>Login</p></Link>
+      <Link to="/login"><button className="login-button" onClick={()=>{changeLoginStatus()}}>{isLoggedIn ? (<p>{loginButtonStatus}</p>): (<p>{loginButtonStatus}</p>)}</button></Link>
     </div>
   );
 };

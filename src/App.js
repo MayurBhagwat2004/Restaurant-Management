@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { NavBar, StaffSection,ReservationBlock,MenuTable } from './FrontEnd/home';
+import { NavBar, StaffSection,ReservationBlock,MenuTable, Footer } from './FrontEnd/home';
 import {LoginForm} from '../src/FrontEnd/LoginPage';
 import ErrorBoundary from '../src/FrontEnd/ErrorBoundary'; 
 import { Routes, Route } from 'react-router-dom';
@@ -23,7 +23,14 @@ function App() {
 
           <Route path="/reserve" element={<ReservationForm />} />
           <Route path='/reservations' element={<ReservationsPage/>}></Route>
-          <Route path='/menu' element={<MenuTable/>}></Route>
+          <Route path='/menu' element={
+            <>
+            <NavBar/>
+            <MenuTable/>
+            <Footer/>
+            </>
+            
+            }></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/login' element={<LoginForm/>}></Route>
         </Routes>
