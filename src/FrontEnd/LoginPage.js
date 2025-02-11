@@ -9,10 +9,14 @@ export const LoginForm = () => {
     const [error,setError] = useState("")
     const navigate = useNavigate();
 
-    const redirectUser = () => {
+
+    const redirectUserToHome = () => {
         navigate("/")
     }
 
+    const redirectUserToRegister = () => {
+        navigate("/")
+    }
 
     const handleSubmit = (e) =>{
         e.preventDefault()
@@ -24,7 +28,7 @@ export const LoginForm = () => {
             setError("")
             localStorage.setItem("isLoggedIn",true)
             alert("Form Submitted Successfully!")
-            redirectUser()
+            redirectUserToHome()
         }
     }
 
@@ -48,9 +52,14 @@ export const LoginForm = () => {
                     </div>                
                     <div className='form-elements'>
                         <button>Login</button>
-
                     </div>
                 </form>
+                <div className='register-link'>
+                    <div className='register-elements'>
+                        <span>Do not have an account?</span>
+                        <button onClick={redirectUserToRegister}></button>
+                    </div>
+                </div>
                 </div>
             </div>
             <Footer/>
