@@ -4,6 +4,7 @@ import { NavBar, StaffSection,ReservationBlock,MenuTable, Footer } from './Front
 import {LoginForm} from '../src/FrontEnd/LoginPage';
 import ErrorBoundary from '../src/FrontEnd/ErrorBoundary'; 
 import { Routes, Route } from 'react-router-dom';
+import { RegisterPage } from './FrontEnd/Register';
 import { ReservationForm } from './FrontEnd/RegisterForm';
 import { ReservationsPage } from './FrontEnd/Reservations';
 import {About} from '../src/FrontEnd/About';
@@ -23,6 +24,7 @@ function App() {
 
           <Route path="/reserve" element={<ReservationForm />} />
           <Route path='/reservations' element={<ReservationsPage/>}></Route>
+          <Route path='/register' element={<RegisterPage/>}></Route>
           <Route path='/menu' element={
             <>
             <NavBar/>
