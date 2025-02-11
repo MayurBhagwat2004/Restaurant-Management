@@ -33,7 +33,7 @@ export const RegisterPage = () => {
                     <div className="form-elements">
                         <button className="button">Register</button>
                     </div>
-
+                        
 
                 </form>
             </div>

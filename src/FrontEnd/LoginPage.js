@@ -53,13 +53,14 @@ export const LoginForm = () => {
                     <div className='form-elements'>
                         <button>Login</button>
                     </div>
-                </form>
-                <div className='register-link'>
-                    <div className='register-elements'>
+                    <div className='form-elements'>
+                        <div className='register-div'>
+
+                        </div>
                         <span>Do not have an account?</span>
-                        <button onClick={redirectUserToRegister}></button>
+                        <button onClick={redirectUserToRegister}>Register</button>
                     </div>
-                </div>
+                </form>
                 </div>
             </div>
             <Footer/>
