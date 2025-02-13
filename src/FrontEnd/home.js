@@ -1,12 +1,14 @@
 import React, { use, useEffect, useState } from 'react';
 import '../Css/home.css';
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate,Link, useLocation } from 'react-router-dom';
 
 
 
 export const NavBar = () => {
   const [isLoggedIn,setIsLoggedIn] = useState(false)
   const [loginButtonStatus,setLoginButtonStatus] = useState("Login")
+  const location = useLocation()
+  const currentPage = location.pathname
 
   const changeLoginStatus = () => {
     localStorage.setItem("isLoggedIn",false)
@@ -32,7 +34,8 @@ export const NavBar = () => {
       <Link to='/menu'><p>Menu</p></Link>
       <Link to='/about'><p>About</p></Link>
       <Link to='/reservations'><p>Reservations</p></Link>
-      <Link to="/login"><button className="login-button" onClick={()=>{changeLoginStatus()}}>{isLoggedIn ? (<p>{loginButtonStatus}</p>): (<p>{loginButtonStatus}</p>)}</button></Link>
+      { currentPage!=="/login" ? (<Link to="/login"><button className="login-button" onClick={()=>{changeLoginStatus()}}>{!isLoggedIn ? (<p>{loginButtonStatus}</p>): (<p>{loginButtonStatus}</p>)}</button></Link>):(<p></p>)}
+      
     </div>
   );
 };
