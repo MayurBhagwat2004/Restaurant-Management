@@ -1,7 +1,8 @@
 You can add this to your CSS file
 .login-form-container{
-    width: 500px;
-    height: 500px;
+    height: 600px;
+    
+    width: 400px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -9,8 +10,15 @@ You can add this to your CSS file
     background-color: #f9f9f9;
   }
   
+  .form-div{
+    margin-left: 31pc;
+    margin-top: 12pc;
+    margin-bottom: 12pc;
+  }
+
   .form-elements {
     margin-bottom: 15px;
+    width: 500px;
   }
   
   label {
@@ -54,4 +62,37 @@ You can add this to your CSS file
   margin-top: 12pc;
   margin-bottom: 12pc;
   width: 400px;
+}
+.form-elements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-elements label{
+  padding-right: 12px;
+}
+
+.error-message{
+  font-size: 20px;
+  color: rgb(50, 47, 47);
+  text-align: center;
+}
+
+.error-message-div{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-right: 34pc;
+}
+
+
+.register-div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
+}
+
+.register-div span{
+  margin-bottom: 12px;
 }
